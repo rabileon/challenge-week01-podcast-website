@@ -1,0 +1,84 @@
+.activity 
+    grid-area: activity;
+    margin-bottom: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    +responsive(desktop-l)
+        padding-left: 80px;
+        padding-right: 80px;
+                       
+    +responsive(tablet-l-only) 
+        padding: 20px;
+    
+    &__line 
+        background-color: color-tercero;
+        height: 6px;
+        border-radius: 10px;
+        border-width: 0;
+        width: 55px;
+        margin-left: 0;
+    
+    &__title-items 
+        display: flex;
+        justify-content: start;
+        margin-top: 15px;
+        margin-bottom: 20px;
+        
+    &__title-items h2 
+        margin-right: 20px;
+        cursor: pointer;
+
+    &__title-activity 
+        color: color-gris;
+    
+    &__count 
+        color: color-primario;
+        background-color: color-tercero;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: $font-five;
+        border-radius: 50%;
+
+    &__projects-items 
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        
+        +responsive(desktop-xl) 
+            justify-content: flex-start;
+        
+        +responsive(mobile-only)
+            flex-direction: column;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        
+    &__projects-item 
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        width: 240px;
+        margin-right: 50px;
+        +responsive(mobile-only)
+            margin: 10px 0px;
+        
+        &-avatar 
+            width: 55px;
+            height: 55px;
+            margin-right: 20px;
+            object-fit: cover;
+            border-radius: 50%;
+
+        &-title 
+            font-family: font-third;
+            font-weight: bold;
+
+        &-detail 
+            font-family: font-third;
+            margin-top: 2px;
+            font-size: 14px;
+            color: $color-gris;

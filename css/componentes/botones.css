@@ -1,0 +1,13 @@
+.primary-button {
+  background-color: color-primario;
+  color: color-tercero;
+  font-family: font-five;
+  font-weight: 800;
+  padding: 10px 0px;
+  font-size: 15px;
+  border-radius: 50px;
+  width: 150px;
+  border: 1px solid color-borde;
+  cursor: pointer;
+  outline: none;
+}

@@ -1,0 +1,56 @@
+.portada {
+    background-repeat: no-repeat;
+    background: linear-gradient(0deg, rgba(3, 95, 182, 0.739), rgba(115, 100, 255, 0)),
+        url(https://unsplash.com/photos/XClNDg9Z9Ag/download?force=true&w=480);
+    object-fit: cover;
+    grid-area: portada;
+    height: 230px;
+    border-radius: 20px;
+    padding: 10px 20px 20px;
+    display: flex;
+    margin-top: 60px;
+    margin-left: 30px;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-start;
+
+    @media @desktop-l {
+        padding: 10px 50px 20px;
+    }
+    @media @tablet-l-only {
+        margin: 0px 20px;
+    }
+    @media @mobile-only {
+        margin: 0px 20px;
+    }
+
+    &__featured {
+        color: @color-primario;
+        border: 2px solid @color-primario;
+        border-radius: 30px;
+        padding: 5px 20px;
+        font-size: 14px;
+        font-family: @font-secondary;
+        letter-spacing: 1px;
+    }
+
+    &__title {
+        color: @color-primario;
+        font-weight: bold;
+        font-size: 38px;
+        margin: 20px 80px 20px 0px;
+        line-height: 38px;
+        @media @desktop-l {
+            margin: 20px 130px 20px 0px;
+        }
+    }
+    &__detail {
+        font-family: @font-secondary;
+        font-size: 14px;
+        color: @color-primario;
+        letter-spacing: 1px;
+    }
+    @media @desktop-xl {
+        margin-left: 60px;
+    }
+}

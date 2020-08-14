@@ -1,0 +1,103 @@
+doctype html
+html
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title PoodCast
+        link(rel="stylesheet", href="css/styles.css")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@600;700&display=swap")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700;800&display=swap")
+    body
+        section.main
+            section.portada
+                a(href="#").portada__featured Featured
+                h2.portada__title Funk Gets A Groove
+                p.portada__detail Feel the Bass . 1 hour
+            section.news
+                .news__item
+                    img(src="img/thenewyorktimes.png", alt="Logo the new york times").news__avatar
+                    h3.news__title THE NEW YORK TIMES
+                ul.news__tags
+                    li
+                        a(href="#") Tulsa
+                    li
+                        a(href="#") Columbus
+                    li
+                        a(href="#") Bogotá
+                p.news__text Enim incididunt excepteur ullamco sint amet minim fugiat magna exercitation dolor duis Mollit laborum Lorem culpa irure qui cillum qui eiusmod enim incididunt aute esse non. Consectetur ipsum proident adipisicing eiusmod cillum. Lorem voluptate incididunt aute cupidatat amet minim ipsum occaecat.
+                button(aria-label="read more button").primary-button READ MORE
+            section.player
+                img(src="https://unsplash.com/photos/_deF3SZt7a4/download?force=true&w=640", alt="portada album" ).player__item-portada
+                h2.player__title Independently Good Designs
+                .player__item-detail
+                    h3.player__artist Adobe / Gimlet Creative
+                    p.player__date NOV 26, 2019
+                .player__progress-detail
+                    progress(value="50" max="100").player__progress
+                    p.player-duration 21:00
+                .player__buttons
+                    button(aria-label="back button").player__buttons-back 
+                    button(aria-label="play button").player__buttons-play
+                    button(aria-label="next button").player__buttons-next
+                    button(aria-label="marker button").player__buttons-mark
+            section.playlists
+                h2.playlist__title Your playlist
+                .carrousel
+                    .carrousel-item
+                        img(src="https://unsplash.com/photos/eIhH7RTlTZA/download?force=true&w=640", alt="primera foto de un album").carrousel-item__img
+                        h3.carrousel-item__title Feeling Artsy
+                        p.carrousel-item__time 2 hours
+                    .carrousel-item
+                        img(src="https://unsplash.com/photos/PVw_vtpCGaM/download?force=true&w=640", alt="segunda foto de un album").carrousel-item__img
+                        h3.carrousel-item__title Feel like Dancing
+                        p.carrousel-item__time 2 hours
+                    .carrousel-item
+                        img(src="https://unsplash.com/photos/jRiWB-UafGI/download?force=true&w=640", alt="tercera foto de un album").carrousel-item__img
+                        h3.carrousel-item__title Somewhere Dark
+                        p.carrousel-item__time 2 hours
+            section.activity
+                hr.activity__line
+                .activity__title-items  
+                    h2.activity__title-activity-active Activity
+                    h2.activity__title-activity Notificacion
+                    a(href="#").activity__count 12
+                .activity__projects-items
+                    .activity__projects-item
+                        img(src="https://unsplash.com/photos/mEZ3PoFGs_k/download?force=true&w=640", alt="foto de perfil de una persona").activity__projects-item-avatar
+                        .activity__projects-item-info
+                            h4.activity__projects-item-title Project Noname
+                            p.activity__projects-item-detail 13 minutes ago
+                    .activity__projects-item
+                        img(src="https://unsplash.com/photos/kvKSL7B6eTo/download?force=true&w=640", alt="foto de perfil de una persona").activity__projects-item-avatar
+                        .activity__projects-item-info
+                            h4.activity__projects-item-title Updated activity
+                            p.activity__projects-item-detail 2 hours ago
+                .activity__projects-items
+                    .activity__projects-item
+                        img(src="https://unsplash.com/photos/XHVpWcr5grQ/download?force=true&w=640", alt="foto de perfil de una persona").activity__projects-item-avatar
+                        .activity__projects-item-info
+                            h4.activity__projects-item-title Income calculation
+                            p.activity__projects-item-detail 29 minutes ago
+                    .activity__projects-item
+                        img(src="https://unsplash.com/photos/vExD0Y0Aei0/download?force=true&w=640", alt="foto de perfil de una persona").activity__projects-item-avatar
+                        .activity__projects-item-info
+                            h4.activity__projects-item-title New chart on page visits
+                            p.activity__projects-item-detail 3 hours ago
+                .activity__projects-items
+                    .activity__projects-item
+                        img(src="https://unsplash.com/photos/sFdbI7P47XE/download?force=true&w=640", alt="foto de perfil de una persona").activity__projects-item-avatar
+                        .activity__projects-item-info
+                            h4.activity__projects-item-title Income calculation
+                            p.activity__projects-item-detail 29 minutes ago
+                    .activity__projects-item
+                        img(src="https://unsplash.com/photos/K07jvi25Qxg/download?force=true&w=640", alt="foto de perfil de una persona").activity__projects-item-avatar
+                        .activity__projects-item-info
+                            h4.activity__projects-item-title New chart on page visits
+                            p.activity__projects-item-detail 3 hours ago
+            section.banner
+                p.banner__text FUNK DEEP
+
+                

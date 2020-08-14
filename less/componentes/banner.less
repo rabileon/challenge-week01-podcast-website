@@ -1,0 +1,36 @@
+.banner {
+    grid-area: banner;
+    background: linear-gradient(0deg, rgba(3, 95, 182, 0.739), rgba(151, 238, 177, 0.514)),
+        url(https://unsplash.com/photos/1KBCgRD8BDc/download?force=true&w=1920);
+    object-fit: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    @media @mobile-only{
+        justify-content: center;
+        width: auto;
+    }
+
+    &__text {
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+        font-family:  @font-five;
+        display: flex;
+        justify-content: space-between;
+        color:  @color-primario;
+        font-size: 80px;
+        @media @desktop-ss-only {
+            font-size: 68px;
+        }
+
+        @media @tablet-l-only {
+            font-size: 50px;
+        }
+        @media @mobile-only{
+            writing-mode: horizontal-tb;
+            font-size: 30px;
+
+            
+        }
+    }
+}

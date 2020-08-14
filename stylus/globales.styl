@@ -1,0 +1,99 @@
+/*===== COLORS =====*/
+
+color-primario= #ffffff;
+color-secundario= #000000;
+color-tercero= #004eff;
+color-borde= #ededed;
+color-gris= #a5acb5;
+color-tag-one= #dad7fe;
+color-tag-two= #fff5cc;
+color-tag-three= #ccf8fe;
+
+/*====== FONTS ====*/
+font-primary= "Source Serif Pro", serif;
+font-secondary= "Lato", sans-serif;
+font-third= "Montserrat", sans-serif;
+font-fourth= "Roboto", sans-serif;
+font-five= "Open Sans", sans-serif;
+
+shadow= rgba(0, 0, 0, 0.5);
+base-line= 1.5;
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul 
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+
+.main 
+  display: grid;
+
+  +responsive(mobile-only) 
+    grid-template: 100px auto auto auto 1fr 1fr/1fr;
+    grid-template-areas:
+      "banner"\
+      "player"\
+      "portada"\
+      "news"\
+      "playlists"\
+      "activity";
+    grid-gap: 30px;
+
+  +responsive(tablet-l-only) 
+    grid-template: 340px 280px 1fr 330px 400px/1fr 10%;
+    grid-template-areas:
+      "player banner"\
+      "portada banner"\
+      "news banner"\
+      "playlists banner"\
+      "activity banner";
+    grid-gap: 0px;
+
+  +responsive(desktop-ss-only) 
+    grid-template: 320px 300px 1fr/30% minmax(10px, auto) 10%;
+    grid-template-areas:
+      "portada player banner"\
+      "news playlists banner"\
+      "news activity  banner";
+    grid-gap: 5px;
+
+  +responsive(desktop-m) 
+    grid-template: 320px 300px 1fr/30% 1fr 10%;
+    grid-template-areas:
+      "portada player banner"\
+      "news playlists banner"\
+      "news activity  banner";
+    grid-gap: 15px;
+  
+  +responsive(desktop-l)
+    grid-template: 320px 300px 1fr/530px 1fr 200px;
+    grid-template-areas:"portada player banner"\
+    "news playlists banner"\
+    "news activity  banner";
+    grid-gap: 15px;
+
+a 
+  text-decoration: none;
+
+ol,
+ul 
+  list-style: none;
+
+p 
+  margin: 0;
+
+
+h2 
+  font-family: font-primary;
+  font-weight: bold;
+  font-size: 26px;
+  letter-spacing: 0.1px;
+
